@@ -1,0 +1,23 @@
+body {
+    background-color: #D7CEB2;
+}
+
+#homeNavbar {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#homeNavbar .navbar-brand {
+    color: black;
+    font-size: 2rem;
+
+}
+
+#homeNavbar .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar.scrolled {
+    background: #A59E8C;
+    transition: background 750ms;
+}
