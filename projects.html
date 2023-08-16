@@ -13,10 +13,46 @@
         
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="projectsStyles.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+              $(document).scroll(function() {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+              })
+            })
+          </script>
 
         <title>My Projects</title>
     </head>
-    <a href="https://github.com">
-        <img id="githubImg" class="img-fluid" src="imgs/github.png" alt="">
-    </a>    
+    <body>
+        <nav id="homeNavbar" class="navbar navbar-dark py-0 fixed-top">
+            <a href="projects.html" class="navbar-brand">PROJECTS</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="home.html" class="nav-link">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                  </li>
+                </ul>
+            </div> 
+        </nav>
+
+        <section class="container-fluid">
+            <div class="row" style="height: 500px;">
+                <div class="col-12 text-white text-right px-3" id="inner">
+                    <a href="https://github.com/NathanTDo">
+                        <img id="githubImg" class="img-fluid" src="imgs/github.png" alt="">
+                    </a>  
+                </div>
+            </div>
+        </section>
+    </body>
 </html>

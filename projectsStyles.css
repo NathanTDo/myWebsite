@@ -5,3 +5,27 @@ body {
 #githubImg {
     height: 50px;
 }
+
+#homeNavbar {
+    background: #93a8ac;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#homeNavbar .navbar-brand {
+    color: black;
+    font-size: 2rem;
+
+}
+
+#homeNavbar .nav-link {
+    color: #FFFFFF;
+}
+
+#githubImg {
+    text-align: left;
+}
+
+#inner {
+    padding: 75px;
+}
